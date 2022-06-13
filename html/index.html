@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+
+     <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: "Montserrat", sans-serif;-->
+<!--            background-color: #f5f7fa;-->
+<!--        }-->
+<!--        -->
+<!--        .main-container {-->
+<!--            display: flex;-->
+<!--            flex-direction: row-reverse;-->
+<!--            width: 1200px;-->
+<!--            background-color: #f5f7fa;-->
+<!--            margin: 40px auto;-->
+<!--            box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);-->
+<!--        }-->
+<!--        /* main content*/-->
+<!--        -->
+<!--        .main-content {-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--            padding: 100px 90px;-->
+<!--        }-->
+<!--        -->
+<!--        .main-content-title {-->
+<!--            font-style: normal;-->
+<!--            font-weight: bold;-->
+<!--            font-size: 22px;-->
+<!--            line-height: 27px;-->
+<!--            color: #000;-->
+<!--            margin-bottom: 10px;-->
+<!--        }-->
+<!--        -->
+<!--        .about-me {-->
+<!--            margin: 0 0 40px 0;-->
+<!--        }-->
+<!--        -->
+<!--        .about_me_profession {-->
+<!--            font-style: normal;-->
+<!--            font-weight: bold;-->
+<!--            font-size: 14px;-->
+<!--            font-weight: 700;-->
+<!--            line-height: 17px;-->
+<!--            color: #000;-->
+<!--            margin: 0 0 20px 0;-->
+<!--        }-->
+<!--        -->
+<!--        .about-me-name {-->
+<!--            font-style: normal;-->
+<!--            font-weight: bold;-->
+<!--            font-size: 45px;-->
+<!--            line-height: 55px;-->
+<!--            color: #000;-->
+<!--            margin: 0 0 25px 0;-->
+<!--        }-->
+<!--        -->
+<!--        .about-me-description {-->
+<!--            width: 400px;-->
+<!--            font-style: normal;-->
+<!--            font-weight: normal;-->
+<!--            font-size: 14px;-->
+<!--            line-height: 24px;-->
+<!--            color: #595959;-->
+<!--        }-->
+<!--        -->
+<!--        .my-progects {-->
+<!--            margin: 0 0 50px;-->
+<!--        }-->
+<!--        -->
+<!--        .my-progects-list {-->
+<!--            padding: 0 0 0 17px;-->
+<!--        }-->
+<!--        -->
+<!--        .my-progect-item {-->
+<!--            color: #000;-->
+<!--            font-weight: 700;-->
+<!--        }-->
+<!--        -->
+<!--        .my-progects-link {-->
+<!--            font-style: normal;-->
+<!--            font-weight: normal;-->
+<!--            font-size: 14px;-->
+<!--            line-height: 24px;-->
+<!--            color: #595959;-->
+<!--        }-->
+<!--        -->
+<!--        .my-progects-text {-->
+<!--            font-style: normal;-->
+<!--            font-weight: normal;-->
+<!--            font-size: 14px;-->
+<!--            line-height: 24px;-->
+<!--            color: #595959;-->
+<!--            margin-left: 5px;-->
+<!--        }-->
+<!--        -->
+<!--        .my-progects-bracket {-->
+<!--            font-style: normal;-->
+<!--            font-weight: bold;-->
+<!--            font-size: 14px;-->
+<!--            line-height: 24px;-->
+<!--            color: #000;-->
+<!--        }-->
+<!--        -->
+<!--        .my-experience-company {-->
+<!--            color: #fb6d3a;-->
+<!--        }-->
+<!--        -->
+<!--        .my-experience-position {-->
+<!--            font-style: normal;-->
+<!--            font-weight: bold;-->
+<!--            font-size: 16px;-->
+<!--            line-height: 20px;-->
+<!--            margin: 0 0 10px 0;-->
+<!--        }-->
+<!--        -->
+<!--        .my-experience-time {-->
+<!--            font-style: normal;-->
+<!--            font-weight: normal;-->
+<!--            font-size: 12px;-->
+<!--            line-height: 15px;-->
+<!--            color: #a8a8a8;-->
+<!--            margin: 0 10px 0 0;-->
+<!--        }-->
+<!--        -->
+<!--        .my-experience-separator {-->
+<!--            font-style: normal;-->
+<!--            font-weight: normal;-->
+<!--            font-size: 12px;-->
+<!--            line-height: 15px;-->
+<!--            color: #000;-->
+<!--        }-->
+<!--        -->
+<!--        .my-experience-duties {-->
+<!--            padding: 18px;-->
+<!--        }-->
+<!--        -->
+<!--        .my-experience-duty {-->
+<!--            font-style: normal;-->
+<!--            font-weight: normal;-->
+<!--            font-size: 14px;-->
+<!--            line-height: 24px;-->
+<!--            color: #595959;-->
+<!--        }-->
+<!--        -->
+<!--        .my-experience-place {-->
+<!--            margin: 0 15px 0 0;-->
+<!--        }-->
+<!--        -->
+<!--        .my-education-place {-->
+<!--            font-style: normal;-->
+<!--            font-weight: bold;-->
+<!--            font-size: 16px;-->
+<!--            line-height: 20px;-->
+<!--            color: #fb6d3a;-->
+<!--            margin: 10px 0 0 0;-->
+<!--        }-->
+<!--        -->
+<!--        .my-education-degree {-->
+<!--            font-style: normal;-->
+<!--            font-weight: bold;-->
+<!--            font-size: 14px;-->
+<!--            line-height: 17px;-->
+<!--            color: #000000;-->
+<!--            margin: 10px 0 0 0;-->
+<!--        }-->
+<!--        -->
+<!--        .my-education-time {-->
+<!--            font-style: normal;-->
+<!--            font-weight: normal;-->
+<!--            font-size: 12px;-->
+<!--            line-height: 15px;-->
+<!--            color: #a8a8a8;-->
+<!--        }-->
+<!--        /* sidebar */-->
+<!--        -->
+<!--        .sidebar {-->
+<!--            background-color: #1e2939;-->
+<!--            width: 370px;-->
+<!--            padding: 40px 0;-->
+<!--        }-->
+<!--        -->
+<!--        .tech,-->
+<!--        .contacts {-->
+<!--            margin: 50px 0 0 40px;-->
+<!--        }-->
+<!--        -->
+<!--        .sidebar-title {-->
+<!--            font-style: normal;-->
+<!--            font-weight: bold;-->
+<!--            font-size: 22px;-->
+<!--            line-height: 27px;-->
+<!--            color: #f5f7fa;-->
+<!--            margin-bottom: 10px;-->
+<!--        }-->
+<!--        /* contacts  */-->
+<!--        -->
+<!--        .contacts-link {-->
+<!--            color: #565f6b;-->
+<!--            font-style: normal;-->
+<!--            font-weight: normal;-->
+<!--            font-size: 14px;-->
+<!--            line-height: 24px;-->
+<!--        }-->
+<!--        -->
+<!--        .contacts-type {-->
+<!--            font-weight: bold;-->
+<!--            font-size: 14px;-->
+<!--            line-height: 24px;-->
+<!--            color: white;-->
+<!--            margin-right: 5px;-->
+<!--        }-->
+<!--        -->
+<!--        .tech-list {-->
+<!--            padding: 0 0 0 17px;-->
+<!--        }-->
+<!--        -->
+<!--        .tech-item {-->
+<!--            color: #fb6d3a;-->
+<!--        }-->
+<!--        -->
+<!--        .tech-item-text {-->
+<!--            font-style: normal;-->
+<!--            font-weight: normal;-->
+<!--            font-size: 14px;-->
+<!--            line-height: 24px;-->
+<!--            color: #f5f7fa;-->
+<!--        }-->
+<!--        -->
+<!--        .soft-skils {-->
+<!--            margin: 20px 0 0 40px;-->
+<!--        }-->
+<!--        -->
+<!--        .soft-list {-->
+<!--            padding: 0 0 0 17px;-->
+<!--        }-->
+<!--        -->
+<!--        .soft-item {-->
+<!--            color: #fb6d3a;-->
+<!--        }-->
+<!--        -->
+<!--        .soft-item-list {-->
+<!--            font-style: normal;-->
+<!--            font-weight: normal;-->
+<!--            font-size: 14px;-->
+<!--            line-height: 24px;-->
+<!--            color: #f5f7fa;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+
+<body>
+    <!-- main container-->
+    <div class="main-container">
+        <!-- main content-->
+        <div class="main-content">
+            <!-- about me section-->
+            <div class="about-me">
+                <h2 class="about_me_profession">Front-End Developer</h2>
+
+                <h1 class="about-me-name">Rustam Rustamov</h1>
+                <p class="about-me-description">
+                    Hey my name is Rustam I'm new to programming and this is a totally new experience to me. It's been almost a year of the education proses at DAN IT education for me there is only 'React' part left, and i want to experience the work in programming as soon
+                    as possible.
+                </p>
+            </div>
+            <!--My projects-->
+            <div class="my-progects">
+                <h3 class="main-content-title">Projects</h3>
+                <ol class="my-progects-list">
+
+                    <li class="my-progect-item">
+                        <span class="my-progects-text">
+                            <a href="https://github.com/Rustammio"
+                                class="my-progects-link">https://github.com/Rustammio </a>
+                            ..........
+                            <span class="my-progects-bracket">[</span> HTML5, CSS3, JS <span class="my-progects-bracket">]</span></span>
+                    </li>
+
+                </ol>
+
+
+
+
+
+            </div>
+            <!-- My experience -->
+            <div class="my-experience">
+                <h3 class="main-content-title">Work experience</h3>
+
+                <!-- company 3-->
+                <div class="my-experience-place">
+                    <h4 class="my-experience-position">Hairdresser <span class="my-experience-company">Various salons
+                    </h4>
+                    <p class="my-experience-time">February 2016 - up to now <span
+                            class="my-experience-separator">|</span> Ukraine </p>
+                        <ul class="my-experience-duties">
+                            <li class="my-experience-duty">I was not only a hairdresser, i was also an educator.</li>
+
+                            <li class="my-experience-duty">I love my current job but, i certainly feel that i have to move on.
+                            </li>
+                            <li class="my-experience-duty">I used to work as a hairdresser for very long time, approximately 6 years.
+                            </li>
+                            <li class="my-experience-duty">I want to start a totally new life in order to grow personally and professionally. </li>
+                            <li class="my-experience-duty">Check my GitHub to make sure that im not a totally stupid! </li>
+
+                        </ul>
+                </div>
+                <!-- company 2-->
+
+            </div>
+            <!-- Education-->
+            <div class="my-education">
+                <h3 class="main-content-title">Education</h3>
+                <h4 class="my-education-place">Dessange academy </h4>
+                <h5 class="my-education-degree">Hairdressing</h5>
+                <p class="my-education-time">September 2009 - June 2014 <span class="my-experience-separator">|</span> Ukraine </p>
+                <h4 class="my-education-place">"Dan It education" academy </h4>
+                <h5 class="my-education-degree">Front end from zero, Full stack. </h5>
+                <p class="my-education-time">September 2021 - September 2022 <span class="my-experience-separator">|</span> Ukraine </p>
+            </div>
+
+        </div>
+        <!--sideBar-->
+        <aside class="sidebar">
+            <!-- <img src="img/photo.jpg" alt="My photo"> -->
+            <!-- <img width="370" src="../img/IMG_2364.jpg" alt="My photo 123"> -->
+            <img width="370" src="../img/IMG_2364.jpg" alt="Sorry that was the only photo that i found online, with open access to it)))))">
+            <!--contacts -->
+            <div class="contacts">
+                <h3 class="sidebar-title">Contacts</h3>
+                <div>
+                    <span class="contacts-type">C:</span>
+                    <a class="contacts-link" href="tel:+380732009501">+380 73 200 95 01</a>
+                </div>
+                <div>
+                    <span class="contacts-type">E:</span>
+                    <a class="contacts-link" href="mailto:rustam.r.r.r.r@gmail.com">rustam.r.r.r.r@gmail.com</a>
+                </div>
+            </div>
+            <div class="tech">
+                <h3 class="sidebar-title">Tech skills</h3>
+                <ul class="tech-list">
+                    <li class="tech-item"> <span class="tech-item-text">HTML5</span> </li>
+                    <li class="tech-item"> <span class="tech-item-text">CSS3</span></li>
+                    <li class="tech-item"> <span class="tech-item-text">GIT</span></li>
+                    <li class="tech-item"> <span class="tech-item-text">Gulp</span></li>
+                    <li class="tech-item"> <span class="tech-item-text">WebPack</span></li>
+                    <li class="tech-item"> <span class="tech-item-text">JavaScript</span></li>
+                    <li class="tech-item"> <span class="tech-item-text">React.js</span></li>
+                    <li class="tech-item"> <span class="tech-item-text">Node.js</span></li>
+                </ul>
+            </div>
+            <!-- Soft skills-->
+            <div class="soft-skils">
+                <h3 class="sidebar-title">Soft skills</h3>
+                <ul class="soft-list">
+                    <li class="soft-item"> <span class="soft-item-list">Scrum</span> </li>
+                    <li class="soft-item"> <span class="soft-item-list">Agile</span> </li>
+                    <li class="soft-item"> <span class="soft-item-list">GTD</span> </li>
+                    <li class="soft-item"> <span class="soft-item-list">Teamwork</span> </li>
+                    <li class="soft-item"> <span class="soft-item-list">Leader skills</span> </li>
+                    <li class="soft-item"> <span class="soft-item-list">English C1</span> </li>
+                    <li class="soft-item"> <span class="soft-item-list">Ukrainian</span> </li>
+                    <li class="soft-item"> <span class="soft-item-list">Russian</span> </li>
+                    <li class="soft-item"> <span class="soft-item-list">People manipulation)))))</span> </li>
+                </ul>
+            </div>
+    </div>
+    </aside>
+
+    </div>
+</body>
+
+</html>
